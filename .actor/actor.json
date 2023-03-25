@@ -1,12 +1,9 @@
 {
-	"actorSpecification": 1,
-	"name": "link-check-crawler",
-	"title": "Project Playwright Crawler Typescript",
-	"description": "Crawlee and Playwright project in typescript.",
-	"version": "0.0",
-	"meta": {
-		"templateId": "ts-crawlee-playwright-chrome"
-	},
-	"input": "./input_schema.json",
-	"dockerfile": "./Dockerfile"
+    "actorSpecification": 1,
+    "name": "broken-link-checker",
+    "title": "Check broken link",
+    "description": "Find articles from startUrls and look for broken link",
+    "version": "0.2",
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
 }

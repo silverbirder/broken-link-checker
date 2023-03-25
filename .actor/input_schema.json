@@ -1,5 +1,5 @@
 {
-    "title": "PlaywrightCrawler Template",
+    "title": "broken link checker",
     "type": "object",
     "schemaVersion": 1,
     "properties": {
@@ -10,8 +10,45 @@
             "editor": "requestListSources",
             "prefill": [
                 {
-                    "url": "https://apify.com"
+                    "url": "https://zenn.dev/silverbirder"
                 }
+            ]
+        },
+        "articleGlobs": {
+            "title": "Article globs",
+            "type": "array",
+            "description": "Article globs",
+            "editor": "globs",
+            "prefill": [
+                {
+                    "glob": "https://zenn.dev/*/articles/*"
+                }
+            ]
+        },
+        "ignoreLinks": {
+            "title": "Ignore links",
+            "type": "array",
+            "description": "Ignore links",
+            "editor": "stringList",
+            "prefill": [
+                "https://zenn.dev/",
+                "https://zenn.dev/search",
+                "https://zenn.dev/faq#what-is-publication",
+                "https://zenn.dev/faq#badges",
+                "https://zenn.dev/about",
+                "https://classmethod.jp/",
+                "https://info.zenn.dev/",
+                "https://zenn.dev/zenn",
+                "https://zenn.dev/publications",
+                "https://zenn.dev/faq",
+                "https://twitter.com/zenn_dev",
+                "https://github.com/zenn-dev",
+                "https://zenn.dev/mediakit",
+                "https://zenn.dev/terms",
+                "https://zenn.dev/privacy",
+                "https://zenn.dev/terms/transaction-law",
+                "https://classmethod.connpass.com/event/276869/",
+                "https://zenn.dev/tech-or-ide"
             ]
         }
     }
